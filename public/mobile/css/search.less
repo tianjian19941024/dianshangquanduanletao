@@ -1,0 +1,64 @@
+@import "common.less";
+
+.lt_container {
+    height: 100%;
+    background-color: #fff;
+    padding: 10px;
+    .search_form {   
+        form {
+            border: 1px solid #006699;
+            border-radius: 5px;
+            overflow: hidden;
+            .searchTxt {
+                float: left;
+                width: 80%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                height: 28px;
+                border-radius: 0;
+            }
+            .searchBtn {
+                float: left;
+                width: 20%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                height: 28px;
+                border-radius: 0;
+                color: #fff;
+                background: #006699;
+            }
+        }
+    }
+    .history_list {
+      padding-top: 20px;
+      color: #666;
+      .his_info{
+        font-size: 12px;
+        
+      }
+      .his_record{
+        .his_tool{
+          font-size: 14px;
+          .clearAll{
+            color: inherit;
+            span{
+              font-size: 20px;
+            }
+          }
+        }
+        ul{
+          .clearUl();
+         li{
+          border: 1px solid #ccc;
+          border-bottom: none;
+          padding: 3px 8px;
+         }
+         li:last-child{
+           border-bottom: 1px solid #ccc;
+         }
+        }
+      }
+    }
+}
