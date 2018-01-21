@@ -26,7 +26,51 @@ body {
 }
 .lt_container {
   height: 100%;
-  background-color: yellowgreen;
+  position: relative;
+}
+.lt_container .lt_content {
+  padding: 0 5px;
+  background-color: yellow;
+}
+.lt_container .lt_content .lt_nav {
+  padding: 5px 0;
+}
+.lt_container .lt_content .lt_nav > a {
+  float: left;
+  width: 33.33%;
+}
+.lt_container .lt_content .lt_nav > a > img {
+  display: block;
+  width: 100%;
+}
+.lt_container .lt_content .lt_adv {
+  border-top: 1px solid #ccc;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(1) {
+  float: left;
+  width: 67%;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(1) > img {
+  display: block;
+  width: 50%;
+  float: left;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(2) {
+  float: right;
+  width: 33%;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(2) > img {
+  display: block;
+  width: 100%;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(3) {
+  float: left;
+  width: 67%;
+}
+.lt_container .lt_content .lt_adv > a:nth-child(3) > img {
+  display: block;
+  width: 50%;
+  float: left;
 }
 .lt_footer {
   position: fixed;
@@ -35,6 +79,7 @@ body {
   height: 50px;
   background-color: #006699;
   padding-top: 6px;
+  z-index: 100;
 }
 .lt_footer > a {
   float: left;
