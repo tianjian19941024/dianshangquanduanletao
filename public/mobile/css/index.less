@@ -1,9 +1,13 @@
+@import "common.less";
 
+/* 网页主体模块*/
 
 .lt_container {
     height: 100%;
-    position: relative;
+    position: relative; //给父盒子加相对定位
+    /* 轮播图*/
     .lt_carousel {}
+    /*网页主体内容*/
     .lt_content {
         padding: 0 5px;
         .lt_nav {
@@ -12,19 +16,21 @@
                 float: left;
                 width: 33.33%;
                 >img {
-                    display: block;
+                    //图片初始化代码  
+                    display: block; //清除图片默认3px间距
                     width: 100%;
                 }
             }
         }
+        /*广告*/
         .lt_adv {
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #000;
             >a:nth-child(1) {
                 float: left;
                 width: 67%;
                 >img {
                     display: block;
-                    width: 50%;
+                    width: 50%; //由两张图片合成一张各占50%
                     float: left;
                 }
             }
@@ -41,11 +47,12 @@
                 width: 67%;
                 >img {
                     display: block;
-                    width: 50%;
+                    width: 50%; //由两张图片合成一张各占50%
                     float: left;
                 }
             }
         }
+        /* 商品列表*/
         .lt_goods_list {
             .lt_brand {
                 >img {
@@ -56,6 +63,7 @@
                     margin: 0;
                     padding: 0;
                     list-style: none;
+                    box-sizing: border-box;
                     li {
                         float: left;
                         width: 25%;
@@ -68,6 +76,7 @@
                     }
                 }
             }
+            /* 运动生活专区*/
             .lt_sport {
                 >img {
                     display: block;
@@ -96,16 +105,17 @@
                                 height: 40px;
                                 overflow: hidden;
                             }
-                            >p {
+                            p {
                                 .new_price {
                                     color: red;
                                 }
                                 .old_price {
                                     color: #666;
+                                    color: #666;
                                     text-decoration: line-through;
                                 }
                             }
-                            >a {
+                            a {
                                 background-color: @mainColor;
                                 color: #fff;
                                 padding: 8px 12px;

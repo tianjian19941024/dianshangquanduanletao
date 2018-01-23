@@ -1,23 +1,23 @@
-
-html,  
+html,
 body {
-    height: 100%;
+    height: 100%; //占整个屏幕高度
 }
 
 body {
-    padding-top: 45px;
-    padding-bottom: 50px;
+    padding-top: 45px; //头部给(固定定位后脱标不占位)给body直接padding占位不让下面元素跑上去
+    padding-bottom: 50px; //尾部所占高度
 }
-  
-@mainColor: #006699;
+
+@mainColor: #006699; //声明变量主体颜色
+
 .lt_header {
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 0; 
+    width: 100%;//固定定位后没宽度直接给100%
     height: 45px;
     background-color: @mainColor;
-    padding: 10px;
     text-align: center;
+    padding: 10px 5px;
     color: #fff;
     .lt_title {
         position: relative;
@@ -27,43 +27,44 @@ body {
             right: 0;
             color: #fff;
         }
-        .lt_h_left{
-          position: absolute;
+        
+        .lt_h_left {
+            position: absolute;
             top: 0;
             left: 0;
             color: #fff;
         }
+
     }
 }
 
 .lt_footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: @mainColor;
-  padding-top: 6px;
-  z-index: 100;
-  >a {
-      float: left;
-      width: 25%;
-      text-align: center;
-      color: #fff;
-      font-size: 13px;
-      >p {
-          color: inherit;
-          font-size: 12px;
-      }
-      >span {
-          font-size: 20px;
-      }
-  }
-  .active {
-      color: orange;
-  }
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    background-color: @mainColor;
+    padding-top: 7px;
+    z-index: 100; //提高层级以免遮挡
+    >a {
+        float: left;
+        width: 25%;
+        text-align: center;
+        color: #fff;
+        font-size: 13px;
+        >p {
+            color: inherit; //继承父元素a标签颜色
+            font-size: 12px;
+        }
+        >span {
+            font-size: 20px;
+        }
+    }
+    .active {
+        color: orange;
+    }
 }
-
-
+//初始化封装类(ul初始化用到)
 .clearUl(){
   margin: 0;
   padding: 0;

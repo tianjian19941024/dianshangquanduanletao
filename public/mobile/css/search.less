@@ -1,64 +1,68 @@
 @import "common.less";
 
 .lt_container {
-    height: 100%;
-    background-color: #fff;
+    height: 100%;  
     padding: 10px;
-    .search_form {   
-        form {
-            border: 1px solid #006699;
-            border-radius: 5px;
-            overflow: hidden;
-            .searchTxt {
-                float: left;
-                width: 80%;
-                margin: 0;
-                padding: 0;
-                border: none;
-                height: 28px;
-                border-radius: 0;
-            }
-            .searchBtn {
-                float: left;
-                width: 20%;
-                margin: 0;
-                padding: 0;
-                border: none;
-                height: 28px;
-                border-radius: 0;
-                color: #fff;
-                background: #006699;
-            }
-        }
-    }
-    .history_list {
-      padding-top: 20px;
-      color: #666;
-      .his_info{
-        font-size: 12px;
-        
+    background-color: #fff;
+   .search_form{
+    form{ 
+    border: 1px solid #006699;
+    border-radius: 5px;
+    overflow: hidden;//隐藏盒子超出圆角部分让圆角显示出来     
+     .searchTxt{
+         float: left;
+         width: 80%;
+         //去除默认引入的mui样式
+         margin: 0;
+         padding: 0;
+         border: none;
+         height: 30px;
+         border-radius: none;
       }
-      .his_record{
+     .searchBtn{
+         float: left;
+         width: 20%;
+         //去除默认引入的mui样式
+         margin: 0;
+         padding: 0;
+         border: none;
+         height: 30px;  
+         color: #fff;
+         background: #006699;
+      }   
+    }
+   }
+   .history_list{
+    padding-top: 20px;
+    color: #666;
+     .his_info{
+         font-size: 12px;
+         
+     } 
+     .his_recond{     
         .his_tool{
-          font-size: 14px;
+        font-size: 14px; 
           .clearAll{
-            color: inherit;
-            span{
-              font-size: 20px;
-            }
+              color: inherit;
+              span{
+                  font-size: 20px;
+              }
           }
         }
         ul{
-          .clearUl();
+          .clearUl();//调用共用common.less的初始化封装类
          li{
-          border: 1px solid #ccc;
-          border-bottom: none;
+
+          border: 1px solid #ccc;   
           padding: 3px 8px;
-         }
-         li:last-child{
+          border-bottom: none;
+          //因为两个li标签下边框会重叠，
+          //所以统一把所有li标签样式去掉再单独给下面的li标签加下边框
+          }
+           li:last-child{
            border-bottom: 1px solid #ccc;
-         }
-        }
-      }
-    }
+          }
+        }   
+     }
+   }
 }

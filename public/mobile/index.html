@@ -5,193 +5,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>乐淘首页-老师上课代码</title>
+  <title>主页面——自己练习代码</title>
+  <!--引入mui前端框架的css-->
   <link rel="stylesheet" href="./assets/mui/css/mui.css">
+  <!--  引入Font Awesome图标字体库框架的css-->
   <link rel="stylesheet" href="./assets/fontAwesome/css/font-awesome.css">
+  <!--  引入公共(多个页面都用到的样式页面头部和尾部)的css-->
   <link rel="stylesheet" href="./css/common.css">
+  <!--  引入自己写的的css-->
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
+  <!--头部搜索导航-->
   <header class="lt_header">
     <h4 class="lt_title">
       乐淘云购
       <a class="lt_h_right" href="./search.html">
-        <span class="fa fa-search"></span>
+          <span class="fa fa-search"></span>    
       </a>
-      <!-- search -->
     </h4>
   </header>
+<!--网页主体模块-->
   <div class="lt_container">
-    <div class="mui-scroll-wrapper">
-      <div class="mui-scroll">
-        <!-- 轮播图 -->
-        <div class="lt_carousel">
-          <div class="mui-slider">
-            <!-- 图片 -->
-            <div class="mui-slider-group mui-slider-loop">
-              <!--支持循环，需要重复图片节点-->
-              <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
-                  <img src="./images/banner9.png" />
-                </a>
+     <div class="mui-scroll-wrapper">
+	   <div class="mui-scroll">
+<!--轮播图-->
+      
+      <div class="lt_carousel">
+            <div class="mui-slider">
+
+              <!-- 图片 -->
+              <div class="mui-slider-group mui-slider-loop">
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner9.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner1.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner2.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner3.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner4.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner5.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner6.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner7.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner8.png" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="./images/banner9.png" /></a></div>       
+                <!--支持循环，需要重复图片节点-->
+                <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="./images/banner1.png" /></a></div>
               </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner1.png" />
-                </a>
+              <!-- 索引器 -->
+              <div class="mui-slider-indicator">
+                <div class="mui-indicator mui-active"></div>
+
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>               
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>                
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                <div class="mui-indicator"></div>
+                
               </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner2.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner3.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner4.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner5.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner6.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner7.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner8.png" />
-                </a>
-              </div>
-              <div class="mui-slider-item">
-                <a href="#">
-                  <img src="./images/banner9.png" />
-                </a>
-              </div>
-              <!--支持循环，需要重复图片节点-->
-              <div class="mui-slider-item mui-slider-item-duplicate">
-                <a href="#">
-                  <img src="./images/banner1.png" />
-                </a>
-              </div>
+
             </div>
-            <!-- 索引器 -->
-            <div class="mui-slider-indicator">
-              <div class="mui-indicator mui-active"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-              <div class="mui-indicator"></div>
-            </div>
-          </div>
-        </div>
-        <!-- 网页主体 -->
-        <div class="lt_content">
-          <!-- 首页导航  -->
-          <div class="lt_nav mui-clearfix">
-            <a href="#">
-              <img src="./images/nav1.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./images/nav2.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./images/nav3.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./images/nav4.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./images/nav5.png" alt="">
-            </a>
-            <a href="#">
-              <img src="./images/nav6.png" alt="">
-            </a>
-          </div>
-          <!-- 广告 -->
-          <div class="lt_adv">
-            <a href="javascript:;">
-              <img src="./images/active1.png" alt="">
-              <img src="./images/active2.png" alt="">
-            </a>
-            <a href="javascript:;">
-              <img src="./images/active3.png" alt="">
-            </a>
-            <a href="javascript:;">
-              <img src="./images/active4.png" alt="" srcset="">
-              <img src="./images/active5.png" alt="" srcset="">
-            </a>
-          </div>
-          <!-- 商品列表 -->
-          <div class="lt_goods_list">
-            <!-- 品牌专区 -->
-            <section class="lt_brand">
-              <img src="./images/title0.png" alt="">
-              <ul class="mui-clearfix">
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand1.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand2.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand3.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand4.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand5.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand6.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand7.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:;">
-                    <img src="./images/brand8.png" alt="">
-                  </a>
-                </li>
-              </ul>
-            </section>
-            <!-- 运动专区 -->
-            <div class="lt_sport">
-              <img src="./images/title1.png" alt="">
-              <ul class="mui-clearfix">
-                <li>
+      </div>
+ <!-- 网页主体内容 -->
+    <div class="lt_content">
+      <!--首页导航-->
+    <!--  mui-clearfix mui内置清浮动的类-->
+      <div class="lt_nav mui-clearfix ">
+        <a href="#"><img src="./images/nav1.png" alt=""></a>
+        <a href="#"><img src="./images/nav2.png" alt=""></a>
+        <a href="#"><img src="./images/nav3.png" alt=""></a>
+        <a href="#"><img src="./images/nav4.png" alt=""></a>
+        <a href="#"><img src="./images/nav5.png" alt=""></a>
+        <a href="#"><img src="./images/nav6.png" alt=""></a>
+      </div>
+      <!--广告-->
+      <div class="lt_adv">
+        <a href="javascript:;">
+          <img src="./images/active1.png" alt="">
+          <img src="./images/active2.png" alt="">
+        </a>
+        <a href="javascript:;">
+          <img src="./images/active3.png" alt="">
+        </a>
+        <a href="javascript:;">
+          <img src="./images/active4.png" alt="">
+          <img src="./images/active5.png" alt="">
+        </a>
+      </div>
+      <!-- 商品列表-->
+      <div class="lt_goods_list">
+        <section class="lt_brand">
+          <img src="./images/title0.png" alt="">
+          <!--(li>a[href="javascript:;"]>img[src="./images/banner$.png"])*8-->
+          <ul class="mui-clearfix">
+            <li><a href="javascript:;"><img src="./images/brand1.png" alt=""></a></li>        
+            <li><a href="javascript:;"><img src="./images/brand2.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand3.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand4.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand5.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand6.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand7.png" alt=""></a></li>
+            <li><a href="javascript:;"><img src="./images/brand8.png" alt=""></a></li>
+          </ul>
+        </section>
+        <!-- 运动生活专区 -->
+        <div class="lt_sport">
+            <img src="./images/title1.png" alt="">
+            <ul>
+              <li>
                   <div class="lt_item">
                     <img src="./images/product.jpg" alt="">
                     <div class="product_info">
@@ -203,8 +127,8 @@
                     </p>
                     <a href="javascript:;">立即购买</a>
                   </div>
-                </li>
-                <li>
+              </li>
+              <li>
                   <div class="lt_item">
                     <img src="./images/product.jpg" alt="">
                     <div class="product_info">
@@ -216,8 +140,8 @@
                     </p>
                     <a href="javascript:;">立即购买</a>
                   </div>
-                </li>
-                <li>
+              </li>
+              <li>
                   <div class="lt_item">
                     <img src="./images/product.jpg" alt="">
                     <div class="product_info">
@@ -229,8 +153,8 @@
                     </p>
                     <a href="javascript:;">立即购买</a>
                   </div>
-                </li>
-                <li>
+              </li>
+              <li>
                   <div class="lt_item">
                     <img src="./images/product.jpg" alt="">
                     <div class="product_info">
@@ -242,32 +166,34 @@
                     </p>
                     <a href="javascript:;">立即购买</a>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+              </li>
+            </ul>
         </div>
       </div>
     </div>
+	  </div>
+   </div>
   </div>
+
   <footer class="lt_footer mui-clearfix">
-    <a class="active" href="./index.html">
-      <span class="mui-icon mui-icon-home"></span>
-      <p>首页</p>
-    </a>
-    <a href="./category.html">
-      <span class="mui-icon mui-icon-bars"></span>
-      <p>分类</p>
-    </a>
-    <a href="./cart.html">
-      <span class="fa fa-shopping-cart"></span>
-      <p>购物车</p>
-    </a>
-    <a href="./user/index.html">
-      <span class="fa fa-user"></span>
-      <p>会员中心</p>
-    </a>
+     <a class="active" href="./index.html">
+       <span class="mui-icon mui-icon-home"></span>
+       <p>首页</p>
+     </a>
+     <a href="./category.html">
+       <span class="mui-icon mui-icon-bars"></span> 
+       <p>分类</p>
+     </a>
+     <a href="./cart.html">
+       <span class="fa fa-shopping-cart"></span>
+       <p>购物车</p>
+     </a>
+     <a href="./user/index.html">
+       <span class="fa fa-user"></span>
+       <p>会员中心</p>
+     </a>         
   </footer>
+  
 </body>
 <script src="./assets/mui/js/mui.js"></script>
 <script src="./assets/zepto/zepto.min.js"></script>

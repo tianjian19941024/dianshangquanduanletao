@@ -12,8 +12,8 @@ body {
   width: 100%;
   height: 45px;
   background-color: #006699;
-  padding: 10px;
   text-align: center;
+  padding: 10px 5px;
   color: #fff;
 }
 .lt_header .lt_title {
@@ -25,12 +25,49 @@ body {
   right: 0;
   color: #fff;
 }
+.lt_header .lt_title .lt_h_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.lt_footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: #006699;
+  padding-top: 7px;
+  z-index: 100;
+}
+.lt_footer > a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+}
+.lt_footer > a > p {
+  color: inherit;
+  font-size: 12px;
+}
+.lt_footer > a > span {
+  font-size: 20px;
+}
+.lt_footer .active {
+  color: orange;
+}
+/* 网页主体模块*/
 .lt_container {
   height: 100%;
   position: relative;
+  /* 轮播图*/
+  /*网页主体内容*/
 }
 .lt_container .lt_content {
   padding: 0 5px;
+  /*广告*/
+  /* 商品列表*/
 }
 .lt_container .lt_content .lt_nav {
   padding: 5px 0;
@@ -44,7 +81,7 @@ body {
   width: 100%;
 }
 .lt_container .lt_content .lt_adv {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #000;
 }
 .lt_container .lt_content .lt_adv > a:nth-child(1) {
   float: left;
@@ -72,6 +109,9 @@ body {
   width: 50%;
   float: left;
 }
+.lt_container .lt_content .lt_goods_list {
+  /* 运动生活专区*/
+}
 .lt_container .lt_content .lt_goods_list .lt_brand > img {
   display: block;
   width: 100%;
@@ -80,6 +120,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 .lt_container .lt_content .lt_goods_list .lt_brand > ul li {
   float: left;
@@ -119,44 +160,17 @@ body {
   height: 40px;
   overflow: hidden;
 }
-.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item > p .new_price {
+.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item p .new_price {
   color: red;
 }
-.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item > p .old_price {
+.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item p .old_price {
   color: #666;
   text-decoration: line-through;
 }
-.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item > a {
+.lt_container .lt_content .lt_goods_list .lt_sport ul li .lt_item a {
   background-color: #006699;
   color: #fff;
   padding: 8px 12px;
   font-size: 14px;
   border-radius: 3px;
 }
-.lt_footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: #006699;
-  padding-top: 6px;
-  z-index: 100;
-}
-.lt_footer > a {
-  float: left;
-  width: 25%;
-  text-align: center;
-  color: #fff;
-  font-size: 13px;
-}
-.lt_footer > a > p {
-  color: inherit;
-  font-size: 12px;
-}
-.lt_footer > a > span {
-  font-size: 20px;
-}
-.lt_footer .active {
-  color: orange;
-}
-/*# sourceMappingURL=./index.css.map */

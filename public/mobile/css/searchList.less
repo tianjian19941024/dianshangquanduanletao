@@ -1,0 +1,47 @@
+@import "common.less";
+
+.lt_container{
+   height: 100%; 
+   position: relative;//mui中的下拉刷新容器用了相对定位，所以要给父盒子绝对定位
+    .search_form {
+      padding: 10px;
+      background-color: #fff;
+        form {
+            border: 1px solid #006699;
+            border-radius: 5px;
+            overflow: hidden;
+            .searchTxt {
+                float: left;
+                width: 80%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                height: 28px;
+                border-radius: 0;
+            }
+            .searchBtn {
+                float: left;
+                width: 20%;
+                margin: 0;
+                padding: 0;
+                border: none;
+                height: 28px;
+                border-radius: 0;
+                color: #fff;
+                background: #006699;
+            }
+        }
+    }
+    .order_tool{
+      >a{
+          float: left;
+          width: 25%;
+          text-align: center;
+          color: #000;
+          font-size: 12px;
+          .mui-icon{
+          font-size:initial;
+          }
+      }  
+    }
+}

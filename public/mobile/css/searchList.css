@@ -57,3 +57,46 @@ body {
 .lt_footer .active {
   color: orange;
 }
+.lt_container {
+  height: 100%;
+  position: relative;
+}
+.lt_container .search_form {
+  padding: 10px;
+  background-color: #fff;
+}
+.lt_container .search_form form {
+  border: 1px solid #006699;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.lt_container .search_form form .searchTxt {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 28px;
+  border-radius: 0;
+}
+.lt_container .search_form form .searchBtn {
+  float: left;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 28px;
+  border-radius: 0;
+  color: #fff;
+  background: #006699;
+}
+.lt_container .order_tool > a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+}
+.lt_container .order_tool > a .mui-icon {
+  font-size: initial;
+}
